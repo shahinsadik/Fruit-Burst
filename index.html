@@ -42,48 +42,14 @@
   <body class="leto-font">
     <header>
       <!-- navbar section  -->
-      <nav>
-        <div class="navbar bg-error p-10 rounded-full items-center">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <label tabindex="0" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </label>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-              >
-                <li><a>Home</a></li>
-                <li><a>About Us</a></li>
-                <li><a>Shop</a></li>
-                <li><a>All Fruits</a></li>
-              </ul>
-            </div>
-            <div class="flex items-center justify-center gap-4">
-              <div>
-                <a class=""><img src="./images/logo.png" alt="" /></a>
-              </div>
-              <div>
-                <h1 class="text-xl md:text-4xl font-bold text-white">
-                  Fruit Burst
-                </h1>
-              </div>
-            </div>
-          </div>
-          <div class="navbar-center hidden lg:flex">
+     <nav class="my-5 p-5">
+      <div class="navbar bg-[#F85559] p-5 my-5 rounded-full">
+        <div class="navbar-start">
+          <div class="flex gap-3 items-center lg:hidden">
+            <img src="./images/logo.png" alt="">
+           <h1 class="text-white font-bold text-xl m:text-5xl">Fruit Burst</h1>
+           </div>
+          <div class="hidden lg:block">
             <ul class="menu menu-horizontal px-1 text-white font-medium">
               <li><a>Home</a></li>
               <li><a>About Us</a></li>
@@ -91,33 +57,40 @@
               <li><a>All Fruits</a></li>
             </ul>
           </div>
-          <div class="navbar-end invisible md:visible">
-            <input
-              type="text"
-              placeholder="Search"
-              class="input input-bordered w-24 rounded-full md:w-auto relative"
-            />
-            <div class="absolute mr-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
           </div>
+        <div class="navbar-center hidden lg:flex">
+         <div class="flex gap-3">
+          <img src="./images/logo.png" alt="">
+         <h1 class="text-white font-bold text-5xl">Fruit Burst</h1>
+         </div>
         </div>
+        <div class="navbar-end">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 e-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] shadow bg-base-100 rounded-box">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+          
+           <div>
+            <div class="form-control hidden lg:block relative">
+              <input type="text" placeholder="Search" class="input  rounded-full input-bordered w-24 md:w-auto" />
+              <svg xmlns="http://www.w3.org/2000/svg" class="absolute top-3 right-4" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M20.9998 21L15.8028 15.803M15.8028 15.803C17.2094 14.3965 17.9996 12.4887 17.9996 10.4995C17.9996 8.51035 17.2094 6.60262 15.8028 5.19605C14.3962 3.78947 12.4885 2.99927 10.4993 2.99927C8.51011 2.99927 6.60238 3.78947 5.19581 5.19605C3.78923 6.60262 2.99902 8.51035 2.99902 10.4995C2.99902 12.4887 3.78923 14.3965 5.19581 15.803C6.60238 17.2096 8.51011 17.9998 10.4993 17.9998C12.4885 17.9998 14.3962 17.2096 15.8028 15.803Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+
+            </div>
+           </div>
+        </div>
+      </div>
       </nav>
       <!-- Exotic tastes at your doorstep banner section -->
-      <section class="relative my-10 p-10">
+      <section class="relative my-5 p-5">
         <div class="carousel w-full rounded-2xl">
           <!-- slider 1 -->
           <div id="slide1" class="carousel-item relative w-full">
@@ -287,7 +260,7 @@
        </div>
      </section>
      <!-- Fruits cart Section  -->
-     <section class=""> 
+     <section class="my-10 p-5"> 
        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-10 md:py-10">
          <!-- section 1 -->
        <div class="card card-compact border p-4">
@@ -1108,7 +1081,7 @@
           </div>
           <div class="space-y-5">
             <!-- Integrated Supplier 1 -->
-            <div class="flex flex-col md:flex-row items-center flex-row-reverse gap-2 items-end">
+            <div class="flex flex-col md:flex-row items-center md:flex-row-reverse gap-2 items-end">
               <img class="bg-slate-200 p-5 rounded-full" src="./images/fruit 1.svg" alt="">
              <span class="text-right">
                <h2 class="text-2xl font-extrabold text-center md:text-right">Dedicated Team</h2> 
@@ -1119,7 +1092,7 @@
              </span>
           </div>
           <!-- Sustainable Practice 2 -->
-          <div class="flex flex-col md:flex-row items-center flex-row-reverse gap-2 items-end">
+          <div class="flex flex-col md:flex-row items-center md:flex-row-reverse gap-2 items-end">
             <img class="bg-slate-200 p-5 rounded-full" src="./images/ice-cream 1.svg" alt="">
            <span class="text-right">
              <h2 class="text-2xl font-extrabold text-center md:text-right">Ustainable Practice</h2> 
@@ -1130,7 +1103,7 @@
            </span>
         </div>
         <!-- The Benefits Only 3 -->
-        <div class="flex flex-col md:flex-row items-center flex-row-reverse gap-2 items-end">
+        <div class="flex flex-col flex-row items-center md:flex-row-reverse gap-2 items-end">
           <img class="bg-slate-200 p-5 rounded-full" src="./images/like 1.svg" alt="">
          <span class="text-right">
            <h2 class="text-2xl font-extrabold text-center md:text-right">The Benefits Only</h2> 
